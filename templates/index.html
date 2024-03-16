@@ -111,14 +111,14 @@
                         <div class="car-logo">
                         <img src="data:image/png;base64,{{ car['Logo'] }}" alt="{{ car['Make'] }} Logo" style="width: 50px;">
                         </div>
-                    -->
+                        -->
                         <div class="car-logo">
                             {% if car['Make']|lower + '.png' %}
                             <img src="{{ url_for('static', filename='images/logos/' + car['Make'] + '.png') }}"
                                 alt="{{ car['Make'] }} logo">
                             {% else %}
-                            <img src="{{ url_for('static', filename='images/logos/default.png') }}"
-                                alt="{{ car['Make'] }} logo (not found)">
+                            <img src="{{ url_for('static', filename='images/logos/audi.png') }}"
+                                alt="{{ car['Make'] }} logo">
                             {% endif %}
                         </div>
                     </td>
